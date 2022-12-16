@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: final_orders_customers
+    columns:
+      - name: order_item_id
+        tests:
+          - unique
+          - not_null
+      - name: order_status
+        tests:
+          - accepted_values:
+              values: ['CLOSED', 'PROCESSING', 'COMPLETED', 'PENDING']
+      - name: department_name
+        tests:
+          - not_null

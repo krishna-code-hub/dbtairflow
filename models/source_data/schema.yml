@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: t1_source # this is the source_name
+    description: 'This is T1 source'
+    schema: raw_schema
+
+    tables:
+      - name: departments # this is the table_name
+      - name: categories
+      - name: products # this is the table_name
+      - name: customers
+      - name: orders # this is the table_name
+      - name: order_items
