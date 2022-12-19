@@ -38,5 +38,9 @@ models:
       +materialized: table
       +schema: core_schema
 
+    datamart:
+      +materialized: table
+      +schema: core_schema
+
   elementary:
     +schema: "rbdatahub_ops"

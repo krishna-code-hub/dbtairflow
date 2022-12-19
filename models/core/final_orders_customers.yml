@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: final_orders_customers
+    description: '{{ doc("table_final_orders") }}'
     columns:
       - name: order_item_id
         tests:

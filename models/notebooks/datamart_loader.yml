@@ -1,0 +1,17 @@
+version: 2
+
+exposures:
+
+  - name: cc_atamarts
+    type: notebook
+    maturity: high
+    url: https://bi.tool/dashboards/1
+    description: >
+      Did someone say "exponential growth"?
+
+    depends_on:
+      - ref('final_orders_customers')
+
+    owner:
+      name: krishna
+      email: krishna@sc.com
